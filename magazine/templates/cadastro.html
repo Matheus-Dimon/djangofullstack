@@ -6,12 +6,12 @@
             <th>Modelo</th>
             <th>Preço</th>
         </tr>
-        {% for cadastro in cadastro %}
+        {% for cadastro in newcad %}
             <tr>
-                <td>{{ newcad.descricao }}</td>
-                <td>{{ newcad.marca }}</td>
-                <td>{{ newcad.modelo }}</td>
-                <td>{{ newcad.preco }}</td>
+                <td>{{ cadastro.descrição }}</td>
+                <td>{{ cadastro.marca }}</td>
+                <td>{{ cadastro.modelo }}</td>
+                <td>{{ cadastro.preço }}</td>
             </tr>
         {% endfor %}
     </table>
