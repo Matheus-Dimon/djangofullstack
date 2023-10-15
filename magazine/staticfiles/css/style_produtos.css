@@ -1,0 +1,35 @@
+nav{text-align:center ;
+    
+}
+h1{text-align: center;
+    background-color: yellow;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 400px;}
+    }
+    
+   .container { text-align: center;
+    background-color: yellow;
+    font-style: italic;
+    font-size: x-large;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column; /* Colocar os elementos um embaixo do outro */
+    justify-content: center; /* Centralizar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    height: 50vh; /* Use a altura da tela inteira */
+    padding-top: 20px;
+   }
+   .form-control-sm {background-color: black;
+    color: whitesmoke;
+    font-style: italic;
+    padding: 8px 8px;
+    font-size:larger;
+    text-align: center;
+
+   }
+   
+
+        

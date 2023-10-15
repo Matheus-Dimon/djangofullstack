@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="{% static 'css/style_produtos.css' %}">
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+    
+<form action="{% url 'listagem_produtos'%}" method = "post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class ="container">
+
+        Descrição<input name="desc" type="text" class="form-control-sm">
+        Marca<input name="marc" type="text" class="form-control-sm">
+        Modelo<input name="mode" type="text" class="form-control-sm">
+        Preço<input name="prec" type="text" class="form-control-sm">
+         
+       <button class = "form-control-sm"> Enviar </button> 
+    </div>
+</form>
+</body>
+</html>
