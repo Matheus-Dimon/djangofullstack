@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine_Project</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+<body onload = "trocautili()" onload = "troca()">
+    <header>
+        <h1>D Magazine Trocas</h1>
+    </header>
+    <section>
+        <div>
+            <p class = "dadacompra">Data da compra: </p>
+            <p>
+                <input type="date" name="prazo" id="prazotroca">
+                <p>Tipo de produto:</p>
+            <p>
+                <input type="button" name="tipo1" id="elet" value="Eletro/Eletrônicos" class="utilibutton">
+                <input type="button" name="tipo2" id="util" value="Utilidades" class="eletrobutton">
+            </p>
+            <div id = "res">
+                Preencha os dados acima para verificar o prazo de sua troca
+            </div>
+            
+            <div id = "logo">
+                <img src="{% static 'img/logo.png' %}" alt="logotipo" class="foto">
+            </div>
+        </div>
+    </section>
+    <footer class = "rodape">
+        <script src="{% static 'js/script.js' %}"></script>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<div class="container">
+    <table>
+        <tr>
+            <th>Descrição</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Preço</th>
+        </tr>
+        {% for cadastro in cadastro %}
+            <tr>
+                <td>{{ newcad.descricao }}</td>
+                <td>{{ newcad.marca }}</td>
+                <td>{{ newcad.modelo }}</td>
+                <td>{{ newcad.preco }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
