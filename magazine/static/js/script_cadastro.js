@@ -2,8 +2,7 @@ function tipo_select() {
     var choseele = document.getElementById('ele').value;
     var chosemov = document.getElementById('mov').value;
     var choseuti = document.getElementById('uti').value;
-    form.submit();
- }
+}
  
  window.onload = function() {
      var botao_chose_ele = document.getElementById('ele');

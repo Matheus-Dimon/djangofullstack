@@ -19,10 +19,11 @@ h1{text-align: center;
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    height: 50vh;
+    height: 50vh; 
     padding-top: 20px;
    }
-   .form-control-sm {background-color: black;
+   .form-control-sm {
+        background-color: black;
     color: whitesmoke;
     font-style: italic;
     padding: 8px 8px;
@@ -31,23 +32,24 @@ h1{text-align: center;
 
    }
 
-   button,.but{
-    background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
-    padding: 10px 15px;
-    margin: 8px;
-    display: inline-block;
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    overflow: hidden;
-    color: #d4e0f7;
-    font-size: 8px;
-    letter-spacing: 2.5px;
+button{
+        background-color: black;
+    color: whitesmoke;
+    font-style: italic;
+    padding: 1px 1px;
+    font-size:larger;
     text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    }
 
-  
-           
+   }
+
+   .but{
+        background-color: black;
+    color: whitesmoke;
+    font-style: italic;
+    padding: 8px 8px;
+    font-size:larger;
+    text-align: center;
+
+   }
+
+

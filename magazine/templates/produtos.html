@@ -1,7 +1,7 @@
 {% load static %}
-=<link rel="stylesheet" href="{% static 'css/style_produtos.css' %}">
+<link rel="stylesheet" href="{% static 'css/style_produtos.css' %}">
 </head>
-<body>
+<body onload = "tipo_select()">
     <h1>Cadastro de Produtos</h1>
     
 <form action="{% url 'listagem_produtos'%}" method = "post">
@@ -19,9 +19,12 @@
         <input class = "but" id="mov" type="button" value="Móveis" onclick="tipo_select(chosemov)">
         <input class = "but" id="uti" type="button" value="Utilidades" onclick="tipo_select(choseuti)">
         </button>
-        
+
+        <footer class = "rodape">
+            <script src="{% static 'js/script_cadastro.js' %}"></script>
+    
+        </footer>
        
     </div>
 </form>
 </body>
-</html>
