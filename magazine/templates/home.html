@@ -26,7 +26,7 @@
     </form>
 
 
-    <form action="{% url 'cadastro'%}" >
+    <form action="{% url 'listagem_produtos'%}" >
         {% csrf_token %}
         {{ form.as_p }}
         <div class ="container">
@@ -39,17 +39,20 @@
 
 
     <div id = "of1" class="img">
-        <img src="{% static 'img/cafeteira.png' %}" alt="logotipo" class="foto">
+        <p class = "imgsub" >Utilidades</p>
+        <img src="{% static 'img/utilidades.png' %}" alt="logotipo" class="foto">
     </div>
 
 
     <div id = "of2" class="img">
-        <img src="{% static 'img/fogão.png' %}" alt="logotipo" class="foto">
+        <p class = "imgsub" >Móveis</p>
+        <img src="{% static 'img/moveis.png' %}" alt="logotipo" class="foto">
     </div>
 
 
     <div id = "of3" class="img">
-        <img src="{% static 'img/chaleira.png' %}" alt="logotipo" class="foto">
+        <p class = "imgsub" >Eletro/Eletrônicos</p>
+        <img src="{% static 'img/eletro.png' %}" alt="logotipo" class="foto">
     </div>
 
 </body>
