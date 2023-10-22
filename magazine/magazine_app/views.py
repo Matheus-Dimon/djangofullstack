@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from .models import cadastro
 
+def home(request):
+    return render(request, 'templates/home.html')
 
-def index(request):
-    return render(request, 'templates/index.html')
+def trocas(request):
+    return render(request, 'templates/trocas.html')
 
 def lista_cadastro(request):
     return render(request, 'templates/produtos.html')

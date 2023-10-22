@@ -16,10 +16,10 @@ h1{text-align: center;
     font-size: x-large;
     margin-right: 20px;
     display: flex;
-    flex-direction: column; /* Colocar os elementos um embaixo do outro */
-    justify-content: center; /* Centralizar verticalmente */
-    align-items: center; /* Centralizar horizontalmente */
-    height: 50vh; /* Use a altura da tela inteira */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 50vh;
     padding-top: 20px;
    }
    .form-control-sm {background-color: black;
