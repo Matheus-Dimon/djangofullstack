@@ -1,18 +1,33 @@
-<div class="container">
-    <table>
-        <tr>
-            <th>Descrição</th>
-            <th>Marca</th>
-            <th>Modelo</th>
-            <th>Preço</th>
-        </tr>
-        {% for cadastro in newcad %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos disponíveis</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_tabela.css' %}">
+</head>
+<body>
+    <p>Produtos cadastrados</p>
+    <div name="tabela" class="container">
+        <table>
             <tr>
-                <td>{{ cadastro.descrição }}</td>
-                <td>{{ cadastro.marca }}</td>
-                <td>{{ cadastro.modelo }}</td>
-                <td>{{ cadastro.preço }}</td>
+                <th>Descrição</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Preço</th>
             </tr>
-        {% endfor %}
-    </table>
-</div>
+            {% for cadastro in newcad %}
+                <tr>
+                    <td>{{ cadastro.descrição }}</td>
+                    <td>{{ cadastro.marca }}</td>
+                    <td>{{ cadastro.modelo }}</td>
+                    <td>{{ cadastro.preço }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    
+    
+</body>
+</html>
