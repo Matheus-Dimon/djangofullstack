@@ -12,22 +12,45 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_home.css' %}">
 </head>
 <body>
-    <p id = "conf">Confira nossas ofertas</p>
+    
     <div id = "logo">
         <img src="{% static 'img/logo.png' %}" alt="logotipo" class="foto">
     </div>
-    <div id = "of1">
+
+    <form action="{% url 'trocas'%}" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class ="container">
+            <button id="gotrocas"> Trocas </button> 
+        </div>
+    </form>
+
+
+    <form action="{% url 'cadastro'%}" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class ="container">
+            <button id="goprodutos"> Produtos </button> 
+        </div>
+    </form>
+
+
+    <p id = "conf">Confira nossas ofertas:</p>
+
+
+    <div id = "of1" class="img">
         <img src="{% static 'img/cafeteira.png' %}" alt="logotipo" class="foto">
     </div>
-    <div id = "of2">
+
+
+    <div id = "of2" class="img">
         <img src="{% static 'img/fogão.png' %}" alt="logotipo" class="foto">
     </div>
-    <div id = "of3">
+
+
+    <div id = "of3" class="img">
         <img src="{% static 'img/chaleira.png' %}" alt="logotipo" class="foto">
     </div>
-    <p id = "trocas">trocas</p>
-    <p id = "log">login/cadastro</p>
-    
-    
+
 </body>
 </html>
