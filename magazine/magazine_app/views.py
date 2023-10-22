@@ -10,10 +10,10 @@ def lista_cadastro(request):
 
 def newcad(request):
     novo_cadastro = cadastro()
-    novo_cadastro.nome = request.POST.get('desc')
-    novo_cadastro.marca = request.POST.get('marc')
-    novo_cadastro.modelo = request.POST.get('mode')
-    novo_cadastro.preço = request.POST.get('prec')
+    novo_cadastro.descrição = request.POST.get('descrição')
+    novo_cadastro.marca = request.POST.get('marca')
+    novo_cadastro.modelo = request.POST.get('modelo')
+    novo_cadastro.preço = request.POST.get('preço')
     novo_cadastro.save()
     newcad = {
         'newcad' : cadastro.objects.all()
