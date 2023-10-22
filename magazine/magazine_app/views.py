@@ -16,6 +16,7 @@ def newcad(request):
     novo_cadastro.marca = request.POST.get('marca')
     novo_cadastro.modelo = request.POST.get('modelo')
     novo_cadastro.preço = request.POST.get('preço')
+    novo_cadastro.preço = request.POST.get('tipo')
     novo_cadastro.save()
     newcad = {
         'newcad' : cadastro.objects.all()

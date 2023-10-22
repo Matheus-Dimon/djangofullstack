@@ -7,8 +7,10 @@
     <title>Produtos disponíveis</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_tabela.css' %}">
 </head>
-<body>
+<body onload = "tipo_select()" >
+
     <p>Produtos cadastrados</p>
+
     <div name="tabela" class="container">
         <table>
             <tr>
@@ -16,6 +18,7 @@
                 <th>Marca</th>
                 <th>Modelo</th>
                 <th>Preço</th>
+                <th>Tipo</th>
             </tr>
             {% for cadastro in newcad %}
                 <tr>
@@ -23,11 +26,15 @@
                     <td>{{ cadastro.marca }}</td>
                     <td>{{ cadastro.modelo }}</td>
                     <td>{{ cadastro.preço }}</td>
+                    <td>{{ cadastro.tipo }}</td>
                 </tr>
             {% endfor %}
         </table>
     </div>
-    
+
+    <footer class = "rodape">
+        <script src="{% static 'js/script_cadastro.js' %}"></script>
+    </footer>
     
 </body>
 </html>
