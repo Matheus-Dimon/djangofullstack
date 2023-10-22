@@ -1,7 +1,7 @@
 from django.db import models
 
 class cadastro(models.Model):
-    desc_produto = models.TextField(primary_key=True)
+    descrição = models.CharField(max_length=255 , primary_key=True)
     marca = models.TextField(max_length=255)
     modelo = models.TextField(max_length=255)
     preço = models.IntegerField()

@@ -1,0 +1,35 @@
+th, td {
+    text-align: center;
+    background-color: black;
+    color:whitesmoke;
+    border: 1.5px solid yellow; 
+    width: 80px;
+    border-spacing: 20px; 
+    border-collapse: separate; 
+}
+
+p{
+    text-align: center;
+    background-color: yellow;
+    font-style: italic;
+    font-size: xx-large;
+    margin-right: 20px;
+   
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 400px;}
+}
+
+div{
+    text-align: center;
+    background-color: yellow;
+    font-style: italic;
+    font-size: x-large;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column; 
+    height: 100vh; 
+    padding-top: 20px;
+}
