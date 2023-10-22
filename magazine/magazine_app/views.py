@@ -4,6 +4,9 @@ from .models import cadastro
 def home(request):
     return render(request, 'templates/home.html')
 
+def produtos_cadastrados(request):
+    return render(request, 'templates/cadastro.html')
+
 def trocas(request):
     return render(request, 'templates/trocas.html')
 

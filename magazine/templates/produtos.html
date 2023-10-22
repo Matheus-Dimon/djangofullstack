@@ -1,11 +1,5 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
-    <link rel="stylesheet" href="{% static 'css/style_produtos.css' %}">
+=<link rel="stylesheet" href="{% static 'css/style_produtos.css' %}">
 </head>
 <body>
     <h1>Cadastro de Produtos</h1>
@@ -18,7 +12,7 @@
         Descrição<input name="descrição" type="text" class="form-control-sm">
         Marca<input name="marca" type="text" class="form-control-sm">
         Modelo<input name="modelo" type="text" class="form-control-sm">
-        Preço<input name="preço" type="number" class="form-control-sm">
+        Preço<input name="preço" type="number" class="form-control-sm" step="0.01" min="0">
 
         <button>
         <input class = "but" id="ele" type="button" value="Eletro/Eletronicos" onclick="tipo_select(choseele)">
