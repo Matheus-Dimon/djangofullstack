@@ -26,11 +26,11 @@
     </form>
 
 
-    <form action="{% url 'listagem_produtos'%}" >
+    <form action="{% url 'cadastro'%}" >
         {% csrf_token %}
         {{ form.as_p }}
         <div class ="container">
-            <button id="goprodutos"> Produtos </button> 
+            <button id="goprodutos"> Cadastro </button> 
         </div>
     </form>
 
