@@ -5,4 +5,4 @@ class cadastro(models.Model):
     marca = models.TextField(max_length=255)
     modelo = models.TextField(max_length=255)
     preço = models.DecimalField(max_digits=10, decimal_places=2)
-    tipo = models.TextField(max_length=255)
+    tipo = models.TextField(max_length=255, blank=True, null=True)

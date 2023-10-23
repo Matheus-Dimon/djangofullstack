@@ -1,55 +1,51 @@
-nav{text-align:center ;
-    
+/* Estilo para o elemento <nav> */
+nav {
+    text-align: center;
 }
-h1{text-align: center;
+
+/* Estilo para o elemento <h1> */
+h1 {
+    text-align: center;
     background-color: yellow;
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 400px;}
-    }
-    
-   .container { text-align: center;
+}
+
+/* Estilo para o elemento com classe "container" */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    text-align: center;
     background-color: yellow;
     font-style: italic;
     font-size: x-large;
     margin-right: 20px;
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    height: 50vh; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
     padding-top: 20px;
-   }
-   .form-control-sm {
-        background-color: black;
+}
+
+/* Estilo para elementos com classe "form-control-sm" */
+.form-control-sm {
+    background-color: black;
     color: whitesmoke;
     font-style: italic;
-    padding: 8px 8px;
-    font-size:larger;
+    padding: 5px;
+    font-size: larger;
     text-align: center;
+}
 
-   }
-
-button{
-        background-color: black;
+/* Estilo para elementos com classe "but" e botões */
+.but,
+button {
+    background-color: black;
     color: whitesmoke;
     font-style: italic;
-    padding: 1px 1px;
-    font-size:larger;
+    padding: 5px;
+    font-size: larger;
     text-align: center;
-
-   }
-
-   .but{
-        background-color: black;
-    color: whitesmoke;
-    font-style: italic;
-    padding: 8px 8px;
-    font-size:larger;
-    text-align: center;
-
-   }
-
-
+    align-items: center;
+}
